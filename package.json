@@ -11,7 +11,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "release": "standard-version"
   },
   "config": {
     "commitizen": {
@@ -28,6 +29,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "commitizen": "^3.0.7"
+    "commitizen": "^3.0.7",
+    "standard-version": "^5.0.1"
   }
 }
