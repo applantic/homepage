@@ -16,9 +16,15 @@ feat(Component): what changed
 
 ## Release new version
 
+It will create changelog based on Commitizen commits
+
 ### `yarn release`
 
-It will create changelog based on Commitizen commits
+## Deploy
+
+It will deploy od Github Pages
+
+### `yarn deploy`
 
 ## Test
 
