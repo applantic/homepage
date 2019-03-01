@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [0.2.0](https://github.com/applantic/homepage/compare/v0.1.0...v0.2.0) (2019-03-01)
+
+
+### Features
+
+* add logo, email and background color ([4cb5a05](https://github.com/applantic/homepage/commit/4cb5a05))
+
+
+
 # 0.1.0 (2019-03-01)
 
 
