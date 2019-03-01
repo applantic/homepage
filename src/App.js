@@ -12,14 +12,14 @@ class App extends Component {
           <p>
             Applantic
           </p>
-          <a
+          {/* <a
             className="link"
             href="mailto:applantic@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             applantic@gmail.com
-          </a>
+          </a> */}
         </header>
       </div>
     );
