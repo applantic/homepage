@@ -14,9 +14,21 @@ const HeaderContainer = styled.header`
   color: ${({ theme }) => theme.colors.white};
 `;
 
+const LogoContainer = styled.div`
+  display: flex;
+  align-items: center;
+  color: ${({ theme }) => theme.colors.white};
+`;
+
+const Logo = styled.img`
+  margin-right: .6rem
+`;
+
 export default () => (
   <HeaderContainer>
-    <img src={logoPath} alt="" />
+    <LogoContainer>
+      <Logo src={logoPath} alt="Logo" /> Applantic
+    </LogoContainer>
     <Navigation />
   </HeaderContainer>
 );

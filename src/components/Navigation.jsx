@@ -1,13 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import { media } from "../styles/helpers";
 
-const NavigationContainer = styled.ul`
+const NavigationContainer = styled.nav`
+  ${media.lessThan('tablet')`
+    display: none;
+  `}
+`;
+
+const MenuContainer = styled.ul`
   display: flex;
   list-style: none;
   color: ${({ theme }) => theme.colors.white};
 `;
 
-const NavigationElement = styled.li`
+const MenuElement = styled.li`
   color: ${({ theme }) => theme.colors.white};
   margin-right: 1rem;
 `;
@@ -37,17 +44,17 @@ const MENU_ELEMNTS = [
 
 const Navigation = () => {
   return (
-    <nav>
-      <NavigationContainer>
+    <NavigationContainer>
+      <MenuContainer>
         {MENU_ELEMNTS.map((el, i) =>
-          <NavigationElement key={i}>
+          <MenuElement key={i}>
             <a href={el.link}>
               {el.name}
             </a>
-          </NavigationElement>
+          </MenuElement>
         )}
-      </NavigationContainer>
-    </nav>
+      </MenuContainer>
+    </NavigationContainer>
   )
 };
 

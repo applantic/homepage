@@ -35,7 +35,6 @@ const Image = styled.img`
   `}
 `;
 
-
 const Header = styled.h2`
   margin: 0;
   font-weight: bold;
