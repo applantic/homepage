@@ -5,16 +5,19 @@ import { GlobalStyle } from "./styles/global";
 import Header from "./sections/Header";
 import Hero from "./sections/Hero";
 import Main from "./sections/Main";
-
+import Footer from "./sections/Footer";
 
 const App = () => (
   <ThemeProvider theme={theme}>
-    <main>
+    <>
       <GlobalStyle />
       <Header />
       <Hero />
-      <Main />
-    </main>
+      <main>
+        <Main />
+      </main>
+      <Footer />
+    </>
   </ThemeProvider>
 );
 

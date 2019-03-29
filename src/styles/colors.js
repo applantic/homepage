@@ -4,7 +4,8 @@ const colors = {
   darkPeach: "#F16262",
   peach: "#F79468",
   powder: "#F6907C",
-  oceanBlue: "#29347A"
+  oceanBlue: "#29347A",
+  scampi: "#5658A4",
 };
 
 export default colors;
