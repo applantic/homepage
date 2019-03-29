@@ -9,7 +9,19 @@ import projectsImage from "../assets/Projects.svg";
 import blogImage from "../assets/Blog.svg"
 
 const MainContainer = styled.section`
-  width: ${breakpoints.desktop};
+  ${media.greaterThan('desktop')`
+    max-width: ${breakpoints.desktop}px;
+  `}
+  ${media.between('tablet', 'desktop')`
+    max-width: ${breakpoints.desktop}px;
+  `}
+  ${media.between('mobile', 'tablet')`
+    max-width: ${breakpoints.tablet}px;
+  `}
+  ${media.lessThan('mobile')`
+    max-width: ${breakpoints.mobile}px;
+  `}
+  margin: auto
   padding: ${space(8)} ${space(2)} ${space(4)};
 `;
 
@@ -51,21 +63,21 @@ const Paragraph = styled.p`
 
 const SECTION_INFO = [
   {
-    id: '#team',
+    id: 'team',
     header: 'Get to know us better.',
     info: 'We are a teams of friends who combines passion for their work. Each of us is unique and has different experience.',
     link: '/asd',
     image: teamImage
   },
   {
-    id: '#project',
+    id: 'projects',
     header: 'See our projects.',
     info: 'We create with passion, we approach each project creatively. We focus on making a  functional and looking good product.',
     link: '/asd',
     image: projectsImage
   },
   {
-    id: '#blog',
+    id: 'blog',
     header: `We're writing a blog!`,
     info: 'We have a blog where you can read about the curiosities from our industry and you will learn a bit more about what we do!',
     link: '/asd',
