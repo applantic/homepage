@@ -5,7 +5,6 @@ import { transparentize } from "polished";
 const buttonStyles = css`
   color: ${({ theme }) => theme.colors.white};
   padding: ${space(1.5)} ${space(4)};
-  display: block;
   border: none;
   border-radius: ${space()};
   font-weight: 500;

@@ -26,4 +26,10 @@ export const GlobalStyle = createGlobalStyle`
       "Helvetica Neue",
       sans-serif;
   }
+
+  a { color: white; text-decoration: none; }
+  a:link { color: white } /* unvisited links */
+  a:visited { color: white } /* visited links */
+  a:hover { color: white; text-decoration: underline; } /* user hovers */
+  a:active { color: white }
 `;
