@@ -39,10 +39,13 @@ const LogoContainer = styled.div`
   align-items: center;
   margin-right: auto;
   color: ${({ theme }) => theme.colors.white};
+  font-size: 1.2rem;
 `;
 
 const Logo = styled.img`
   margin-right: .6rem
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
 `;
 
 export default () => (
