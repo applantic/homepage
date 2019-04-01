@@ -27,38 +27,64 @@ const MainContainer = styled.section`
 
 const SectionContainer = styled.div`
   display: flex;
-  flex-direction: row
+  flex-direction: row;
+  margin-bottom: 6rem;
+  &:nth-of-type(2) {
+    flex-direction: row-reverse;
+  }
   ${media.lessThan('tablet')`
-     flex-direction: column-reverse
+     flex-direction: column-reverse;
+     &:nth-of-type(2) {
+      flex-direction: column-reverse;
+    }
   `}
+}
 `;
 
 const Info = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 50%
-  ${media.lessThan('desktop')`
+  ${media.lessThan('tablet')`
     width: 100%
+    justify-content: left;
   `}
 `;
 
 const Image = styled.img`
   width: 50%
-  ${media.lessThan('desktop')`
+  padding: 0 20px;
+  ${media.lessThan('tablet')`
     width: 100%
+    padding: 0 10px;
   `}
 `;
 
 const Header = styled.h2`
   margin: 0;
   font-weight: bold;
-  font-size: 59px;
-  line-height: 71px;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
   color: ${colors.oceanBlue};
+  ${media.greaterThan('tablet')`
+    font-size: 59px;
+    line-height: 71px;
+    text-align: left;
+  `}
 `;
 
 const Paragraph = styled.p`
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
   color: ${colors.oceanBlue};
+  ${media.greaterThan('tablet')`
+    font-size: 25px;
+    line-height: 35px;
+    text-align: left;
+  `}
 `;
 
 const SECTION_INFO = [
@@ -66,21 +92,21 @@ const SECTION_INFO = [
     id: 'team',
     header: 'Get to know us better.',
     info: 'We are a teams of friends who combines passion for their work. Each of us is unique and has different experience.',
-    link: '/asd',
+    link: '/team',
     image: teamImage
   },
   {
     id: 'projects',
     header: 'See our projects.',
-    info: 'We create with passion, we approach each project creatively. We focus on making a  functional and looking good product.',
-    link: '/asd',
+    info: 'We create with passion, we approach each project creatively. We focus on making a functional and looking good product.',
+    link: 'https://www.behance.net/MateuszKarski',
     image: projectsImage
   },
   {
     id: 'blog',
     header: `We're writing a blog!`,
     info: 'We have a blog where you can read about the curiosities from our industry and you will learn a bit more about what we do!',
-    link: '/asd',
+    link: 'https://medium.com/applantic',
     image: blogImage
   }
 ]
@@ -88,11 +114,11 @@ const SECTION_INFO = [
 export default () => (
   <MainContainer>
     {SECTION_INFO.map((section, i) =>
-      <SectionContainer id={section.id}>
+      <SectionContainer id={section.id} key={i}>
         <Info>
           <Header>{section.header}</Header>
           <Paragraph>{section.info}</Paragraph>
-          <ButtonPrimary as='a' href={section.link}>
+          <ButtonPrimary href={section.link} target='_blank'>
             Read more
           </ButtonPrimary>
         </Info>
