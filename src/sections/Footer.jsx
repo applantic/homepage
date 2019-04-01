@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { media, space } from "../styles/helpers";
-import { breakpoints } from "../styles/variables";
-// import matt from "../assets/matt.png"
 
 const FooterSection = styled.footer`
   background: ${({ theme }) => theme.secondaryGradient};
@@ -14,18 +12,10 @@ const FooterSection = styled.footer`
 const FooterContainer = styled.div`
   display: flex;
   margin: auto;
+  flex-direction: column;
   justify-content: space-evenly;
-  ${media.greaterThan('desktop')`
-    max-width: ${breakpoints.desktop}px;
-  `}
-  ${media.between('tablet', 'desktop')`
-    max-width: ${breakpoints.desktop}px;
-  `}
-  ${media.between('mobile', 'tablet')`
-    max-width: ${breakpoints.tablet}px;
-  `}
-  ${media.lessThan('mobile')`
-    max-width: ${breakpoints.mobile}px;
+  ${media.greaterThan('tablet')`
+    flex-direction: row;
   `}
 `;
 
@@ -34,10 +24,6 @@ const Header = styled.div`
   font-size: 59px;
   line-height: 71px;
 `
-
-// const Image = styled.img`
-//   z-index: 100;
-// `;
 
 export default () => (
   <FooterSection id='contact'>

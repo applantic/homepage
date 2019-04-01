@@ -15,8 +15,10 @@ const HeroSection = styled.section`
 
 const WhiteOverlay = styled.img`
   position: absolute;
-  bottom 0;
-  width: 100vw;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 `;
 
 const HeroContainer = styled.div`
@@ -36,10 +38,29 @@ const HeroContainer = styled.div`
   `}
 `;
 
+const HeroText = styled.div`
+  z-index: 20;
+  margin-bottom: 6rem;
+  padding-right: 0rem;
+  ${media.greaterThan('mobile')`
+    padding-right: 1rem;
+  `}
+  ${media.greaterThan('tablet')`
+    margin-bottom: 0;
+    padding-right: 0;
+  `}
+`;
+
 const Header = styled.h1`
   font-weight: bold;
   font-size: 59px;
   line-height: 71px;
+  margin-top: 6rem
+  ${media.lessThan('tablet')`
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 4rem
+  `}
 `
 
 const Paragraph = styled.p`
@@ -47,19 +68,28 @@ const Paragraph = styled.p`
   line-height: 35px;
 `
 
-const Image = styled.img`
+const ImageMatt = styled.img`
   z-index: 100;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  width: 50%
+  ${media.lessThan('desktop')`
+    margin-right: 0
+  `}
+  ${media.lessThan('tablet')`
+    display: none
+  `}
 `;
 
 export default () => (
   <HeroSection>
     <HeroContainer>
-      <div>
+      <HeroText>
         <Header>Building software for the modern world</Header>
         <Paragraph>Our professional team works hard to fit your needs by integrating.</Paragraph>
         <ButtonPrimary>Read more</ButtonPrimary>
-      </div>
-      <Image src={matt} />
+      </HeroText>
+      <ImageMatt src={matt} />
     </HeroContainer>
     <WhiteOverlay src={whiteBg} />
   </HeroSection>
