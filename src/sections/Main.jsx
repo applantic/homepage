@@ -118,7 +118,7 @@ export default () => (
         <Info>
           <Header>{section.header}</Header>
           <Paragraph>{section.info}</Paragraph>
-          <ButtonPrimary href={section.link} target='_blank'>
+          <ButtonPrimary as='a' href={section.link} target='_blank'>
             Read more
           </ButtonPrimary>
         </Info>

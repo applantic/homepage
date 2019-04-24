@@ -87,7 +87,7 @@ export default () => (
       <HeroText>
         <Header>Building software for the modern world</Header>
         <Paragraph>Our professional team works hard to fit your needs by integrating.</Paragraph>
-        <ButtonPrimary href='#team' target='_blank'>
+        <ButtonPrimary as='a' href='#team'>
           Read more
         </ButtonPrimary>
       </HeroText>
