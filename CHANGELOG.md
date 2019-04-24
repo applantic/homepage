@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [0.4.0](https://github.com/applantic/homepage/compare/v0.3.0...v0.4.0) (2019-04-24)
+
+
+### Bug Fixes
+
+* change links ([508e763](https://github.com/applantic/homepage/commit/508e763))
+* gradient on header ([e9efe81](https://github.com/applantic/homepage/commit/e9efe81))
+* Header and Section styles ([b93e5fb](https://github.com/applantic/homepage/commit/b93e5fb))
+
+
+### Features
+
+* add favicon ([75c4701](https://github.com/applantic/homepage/commit/75c4701))
+* add Hero data ([2ad7c65](https://github.com/applantic/homepage/commit/2ad7c65))
+* **Footer:** add Footer and mailto ([a4754fe](https://github.com/applantic/homepage/commit/a4754fe))
+* **Footer:** add Footer container ([41b99f8](https://github.com/applantic/homepage/commit/41b99f8))
+* **Hero:** add matt person and some styles ([7230f58](https://github.com/applantic/homepage/commit/7230f58))
+* **Main:** add Main section ([7572b1c](https://github.com/applantic/homepage/commit/7572b1c))
+
+
+
 # [0.3.0](https://github.com/applantic/homepage/compare/v0.2.1...v0.3.0) (2019-03-05)
 
 

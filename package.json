@@ -1,7 +1,7 @@
 {
   "name": "homepage",
   "homepage": "https://applantic.pl",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "dependencies": {
     "polished": "^3.0.3",
