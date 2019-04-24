@@ -92,7 +92,7 @@ const SECTION_INFO = [
     id: 'team',
     header: 'Get to know us better.',
     info: 'We are a teams of friends who combines passion for their work. Each of us is unique and has different experience.',
-    link: '/team',
+    link: 'https://www.facebook.com/applantic/',
     image: teamImage
   },
   {
